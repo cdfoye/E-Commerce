@@ -32,7 +32,7 @@ Product.init(
       allowNull: false,
       defaultValue: 10,
       validate: {
-        isNumber: true,
+        isNumeric: true,
       },
     },
     category_id: {
@@ -40,7 +40,6 @@ Product.init(
       references: {
         model: "category",
         key: "id",
-        unique: false,
       },
     },
   },
